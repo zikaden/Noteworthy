@@ -16,21 +16,7 @@ const Nav = () => {
                                 <img className="w-12 md:w-12 h-12 md:h-12" src={Logo} alt="NavLogoOne" />
                                 <span className='text text-bold text-xl font-changa text-black md:text-3xl'>Noteworthy</span>
                             </div>
-                            {/*menu*/}
-                            <div className='hidden md:flex items-center space-x-4'>
-                                <Link to={`/`}>
-                                    <p className='text-white text-xl font-bold hover:text-blue-700 hover:underline underline-offset-8'>Navbar One</p>
-                                </Link>
-                                <Link to={`/navthree`}>
-                                    <p className='text-white text-xl font-bold hover:text-blue-700 hover:underline underline-offset-8'>Navbar Three</p>
-                                </Link>
-                            </div>
-                            {/*button for hamburger icon for mobile navigation*/}
-                            <div className="md:hidden flex items-center">
-                                <button className="mobile-menu-button" onClick={() => setToggle(!toggle)} >
-                                    <img className="h-5" src={Hamburgermenu} alt="Hamburgericon" />
-                                </button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -48,11 +34,6 @@ const Nav = () => {
                     </div>
                 )}
             </nav>
-            <div className="hidden md:block">
-                <div className="text-center py-32 text-blue-300 ">
-                    <div className='text-serif md:text-7xl hover:text-blue-800'>Navbar Two using Tailwind css!</div>
-                </div>
-            </div>
         </div>
     )
 }
